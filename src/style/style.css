@@ -47,12 +47,15 @@
   flex-direction: column;
   padding: 8px;
   gap: 0;
+  border-radius: 10px;
 }
 
 .excutive__grid__item img {
   border-radius: 12px;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.h1{
+.h1 {
   margin-right: 200px;
 }
