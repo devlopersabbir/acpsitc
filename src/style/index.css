@@ -540,7 +540,7 @@ footer {
   transition: ease-in-out all 0.4s !important;
 }
 .see-more-button {
-  background-color: skyblue; /* Set the button background color to sky blue */
+  background-color: #00416d; /* Set the button background color to sky blue */
   color: white; /* Set the text color to white */
   border: none; /* Remove the button border */
   padding: 10px 20px; /* Add padding for better appearance */
