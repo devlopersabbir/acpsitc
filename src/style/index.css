@@ -539,3 +539,18 @@ footer {
 .navbar-collapse {
   transition: ease-in-out all 0.4s !important;
 }
+.see-more-button {
+  background-color: skyblue; /* Set the button background color to sky blue */
+  color: white; /* Set the text color to white */
+  border: none; /* Remove the button border */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border-radius: 5px; /* Add rounded corners */
+  display: block; /* Make the button a block element to center it */
+  margin: 0 auto; /* Center-align the button horizontally */
+  cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.see-more-button:hover {
+  background-color: lightblue;
+}
+
