@@ -3,12 +3,16 @@
  */
 
 const main = () => {
-  const navbarBtn = document.getElementById("navbarBtn");
-  const navbarNav = document.getElementById("navbarNav");
+  const barBtn = document.getElementById("barBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const mobileNavbar = document.getElementById("mobileNavbar");
 
-  navbarBtn.addEventListener("click", () =>
-    navbarNav.classList.toggle("collapse")
-  );
+  barBtn.addEventListener("click", () => {
+    mobileNavbar.style.transform = "translateY(0px)";
+  });
+  closeBtn.addEventListener("click", () => {
+    mobileNavbar.style.transform = "translateY(-1000px)";
+  });
 };
 
 window.addEventListener("DOMContentLoaded", main);

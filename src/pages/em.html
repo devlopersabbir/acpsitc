@@ -23,7 +23,97 @@
       }
     </style>
   </head>
-  <body>
+  <body style="position: relative">
+    <!-- Mobile navbar -->
+    <div class="mobileNavbar" id="mobileNavbar">
+      <button id="closeBtn" class="closeBtn">
+        <i style="font-size: 1.5rem" class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="navbar-nav ml-auto" id="navbarItemContainer">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/pages/history.html">
+            <i class="fa-solid fa-clock-rotate-left"></i> History
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/pages/em.html">
+            <i class="fa-solid fa-users"></i> Executive Members
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sectors">
+            <i class="fa-solid fa-database"></i> Sectors
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="src/pages/gallery.html">
+            <i class="fa-regular fa-image"></i> Gallery
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-regular fa-address-card"></i> Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile navbar -->
+    <!-- Header Section start -->
+    <header>
+      <nav class="navbar-expand-lg">
+        <div class="container d-flex flex-row justify-content-between w-full">
+          <a href="/" class="navbar-brand">
+            <img src="./src/assets/logo.png" alt="ACPSITC Logo" />
+          </a>
+
+          <!-- nav item container start here -->
+          <div class="navbarNavContainer" id="navbarNavContainer">
+            <ul class="navbar-nav ml-auto" id="navbarItemContainer">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home"></i> Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./src/pages/history.html">
+                  <i class="fa-solid fa-clock-rotate-left"></i> History
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./src/pages/em.html">
+                  <i class="fa-solid fa-users"></i> Executive Members
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sectors">
+                  <i class="fa-solid fa-database"></i> Sectors
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="src/pages/gallery.html">
+                  <i class="fa-regular fa-image"></i> Gallery
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fa-regular fa-address-card"></i> Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- nav item container start here -->
+          <button id="barBtn" class="barBtn">
+            <i style="font-size: 1.5rem" class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">

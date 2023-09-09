@@ -11,40 +11,65 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+
     <link rel="stylesheet" href="./src/style/index.css" />
     <link rel="stylesheet" href="./src/style/style.css" />
     <link rel="stylesheet" href="./src/style/typewriter.css" />
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="src/assets/logo.png" />
   </head>
-  <body>
+  <body style="position: relative">
+    <!-- Mobile navbar -->
+    <div class="mobileNavbar" id="mobileNavbar">
+      <button id="closeBtn" class="closeBtn">
+        <i style="font-size: 1.5rem" class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="navbar-nav ml-auto" id="navbarItemContainer">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/pages/history.html">
+            <i class="fa-solid fa-clock-rotate-left"></i> History
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./src/pages/em.html">
+            <i class="fa-solid fa-users"></i> Executive Members
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sectors">
+            <i class="fa-solid fa-database"></i> Sectors
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="src/pages/gallery.html">
+            <i class="fa-regular fa-image"></i> Gallery
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fa-regular fa-address-card"></i> Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile navbar -->
     <!-- Header Section start -->
     <header>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="/">
+      <nav class="navbar-expand-lg">
+        <div class="container d-flex flex-row justify-content-between w-full">
+          <a href="/" class="navbar-brand">
             <img src="./src/assets/logo.png" alt="ACPSITC Logo" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            id="navbarBtn"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+
+          <!-- nav item container start here -->
+          <div class="navbarNavContainer" id="navbarNavContainer">
+            <ul class="navbar-nav ml-auto" id="navbarItemContainer">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">
                   <i class="fas fa-home"></i> Home
@@ -77,6 +102,10 @@
               </li>
             </ul>
           </div>
+          <!-- nav item container start here -->
+          <button id="barBtn" class="barBtn">
+            <i style="font-size: 1.5rem" class="fa-solid fa-bars"></i>
+          </button>
         </div>
       </nav>
     </header>
@@ -95,7 +124,7 @@
     <!-- Main Content Section end here -->
 
     <!-- About Us Section -->
-    <section id= "about-us container mx-auto" class="about-us container mx-auto">
+    <section id="about-us container mx-auto" class="about-us container mx-auto">
       <h2>About Us</h2>
       <div
         class="row"
@@ -114,7 +143,10 @@
         </div>
         <div class="col-md-6">
           <p class="dj text-left">
-           ACPSITC is a community of students, faculty, and staff who are passionate about computing and information technology. We strive to create a supportive and engaging environment where everyone can learn and grow.
+            ACPSITC is a community of students, faculty, and staff who are
+            passionate about computing and information technology. We strive to
+            create a supportive and engaging environment where everyone can
+            learn and grow.
           </p>
         </div>
       </div>
@@ -131,7 +163,8 @@
               <div class="sector-overlay sector-overlay-visible sector__div">
                 <h3>Power Point Presentation</h3>
                 <p>
-                  PowerPoint presentation is a way to share knowledge and ideas about computing and information technology.
+                  PowerPoint presentation is a way to share knowledge and ideas
+                  about computing and information technology.
                 </p>
                 <i id="sector__icons" class="fa fa-slideshare"></i>
               </div>
@@ -141,9 +174,7 @@
             <div class="sector-item programming">
               <div class="sector-overlay sector-overlay-visible sector__div">
                 <h3>Programming</h3>
-                <p>
-                  Learn to code and build your skills.
-                </p>
+                <p>Learn to code and build your skills.</p>
                 <i id="sector__icons" class="fa fa-code"></i>
               </div>
             </div>
@@ -153,7 +184,8 @@
               <div class="sector-overlay sector-overlay-visible sector__div">
                 <h3>Web Designing</h3>
                 <p>
-                  Provides opportunities for students to learn and grow in the field of web design.
+                  Provides opportunities for students to learn and grow in the
+                  field of web design.
                 </p>
                 <i id="sector__icons" class="fa fa-globe"></i>
               </div>
@@ -164,7 +196,8 @@
               <div class="sector-overlay sector-overlay-visible sector__div">
                 <h3>Graphics Designing</h3>
                 <p>
-                  Creating visual solutions for communication and problem-solving.
+                  Creating visual solutions for communication and
+                  problem-solving.
                 </p>
                 <i id="sector__icons" class="fa fa-paint-brush"></i>
               </div>
@@ -174,9 +207,7 @@
             <div class="sector-item programming">
               <div class="sector-overlay sector-overlay-visible sector__div">
                 <h3>Video Editing</h3>
-                <p>
-                  Learn the skills to create stunning videos.
-                </p>
+                <p>Learn the skills to create stunning videos.</p>
                 <i id="sector__icons" class="fa fa-video-camera"></i>
               </div>
             </div>
@@ -185,9 +216,7 @@
             <div class="sector-item programming">
               <div class="sector-overlay sector-overlay-visible sector__div">
                 <h3>Gaming</h3>
-                <p>
-                  A community for gamers to connect, compete, and learn.
-                </p>
+                <p>A community for gamers to connect, compete, and learn.</p>
                 <i id="sector__icons" class="fa fa-gamepad"></i>
               </div>
             </div>
@@ -198,77 +227,79 @@
     <!-- sector end here -->
 
     <!-- Testimonial Section -->
-  <section class="testimonial">
-  <div class="container">
-    <h2>Testimonials</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="testimonial-item">
-          <div class="testimonial-icon">
-            <i class="fa fa-user" aria-hidden="true"></i>
+    <section class="testimonial">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="testimonial-item">
+              <div class="testimonial-icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <div id="testimonial-text" class="testimonial-text">
+                <p id="p-text" class="p-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at risus leo. Integer euismod sed lorem eu cursus.
+                  Suspendisse potenti. Donec nec orci et urna viverra placerat
+                  vel sed enim."
+                </p>
+                <div class="testimonial-user">
+                  <img src="./src/assets/user1.jpeg" alt="User 1" />
+                  <h4>
+                    Bm. Badshah Alamgir<br />
+                    <span class="text-ash small">Senior Teacher,ICT,ACPS</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="testimonial-text" class="testimonial-text">
-            <p id="p-text" class="p-text">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aliquam at risus leo. Integer euismod sed lorem eu cursus.
-              Suspendisse potenti. Donec nec orci et urna viverra placerat
-              vel sed enim."
-            </p>
-            <div class="testimonial-user">
-              <img src="./src/assets/user1.jpeg" alt="User 1" />
-              <h4>Bm. Badshah Alamgir<br>
-                <span class="text-ash small">Senior Teacher,ICT,ACPS</span>
-              </h4>
+          <div class="col-md-4">
+            <div class="testimonial-item">
+              <div class="testimonial-icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <div id="testimonial-text" class="testimonial-text">
+                <p id="p-text" class="p-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at risus leo. Integer euismod sed lorem eu cursus.
+                  Suspendisse potenti. Donec nec orci et urna viverra placerat
+                  vel sed enim."
+                </p>
+                <div class="testimonial-user">
+                  <img src="./src/assets/user1.jpeg" alt="User 2" />
+                  <h4>
+                    Tariq Mahmood<br />
+                    <span class="text-ash small">Founder</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-item">
+              <div class="testimonial-icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <div id="testimonial-text" class="testimonial-text">
+                <p id="p-text" class="p-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam at risus leo. Integer euismod sed lorem eu cursus.
+                  Suspendisse potenti. Donec nec orci et urna viverra placerat
+                  vel sed enim."
+                </p>
+                <div class="testimonial-user">
+                  <img src="./src/assets/user1.jpeg" alt="User 3" />
+                  <h4>
+                    Kh.Sifat Sami<br />
+                    <span class="text-ash small">President</span>
+                  </h4>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="testimonial-item">
-          <div class="testimonial-icon">
-            <i class="fa fa-user" aria-hidden="true"></i>
-          </div>
-          <div id="testimonial-text" class="testimonial-text">
-            <p id="p-text" class="p-text">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aliquam at risus leo. Integer euismod sed lorem eu cursus.
-              Suspendisse potenti. Donec nec orci et urna viverra placerat
-              vel sed enim."
-            </p>
-            <div class="testimonial-user">
-              <img src="./src/assets/user1.jpeg" alt="User 2" />
-              <h4>Tariq Mahmood<br>
-                <span class="text-ash small">Founder</span>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial-item">
-          <div class="testimonial-icon">
-            <i class="fa fa-user" aria-hidden="true"></i>
-          </div>
-          <div id="testimonial-text" class="testimonial-text">
-            <p id="p-text" class="p-text">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aliquam at risus leo. Integer euismod sed lorem eu cursus.
-              Suspendisse potenti. Donec nec orci et urna viverra placerat
-              vel sed enim."
-            </p>
-            <div class="testimonial-user">
-              <img src="./src/assets/user1.jpeg" alt="User 3" />
-              <h4>Kh.Sifat Sami<br>
-                <span class="text-ash small">President</span>
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- testimonial end here -->
 
@@ -312,10 +343,9 @@
         <!-- swiper end -->
       </div>
       <!-- See More Button -->
-    <a href="#">
-  <button class="see-more-button" id="seeMoreButton">See More</button>
-</a>
-
+      <a href="#">
+        <button class="see-more-button" id="seeMoreButton">See More</button>
+      </a>
     </section>
     <!-- Gallery Section end here -->
 
@@ -434,7 +464,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popperjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- jquary cdn -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
